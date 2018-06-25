@@ -96,10 +96,13 @@ time, mark, audio, video {
 }	
 /* Fim do Rodapé*/
 /* Conteúdo */
-main{
-	min-height: calc(100vh - 221px);
-	padding: 20px;
+.mapa{
+	display:none;
 }	
+main{
+	min-height: calc(100vh - 350px);
+	padding: 10px 20px;
+}		
 /* Index */
 .infopp{
 	color:white;
@@ -145,7 +148,92 @@ main{
 	background-size: 80%;
 }	
 /* Fim do Index*/
+/* Matérias */
+.pmateria > article{
+	display: flex;
+	justify-content: center;
+	align-items: top;
+	flex-flow: wrap row; 
+}	
+.materiasdiv{
+	max-width: 300px;
+	border: 1px solid black;
+	padding: 10px;
+	text-align: justify;
+	margin: 20px;
+}
+.materiasdiv > header{
+	padding-bottom: 10px;
+}	
+.materiasdiv > header > h4{
+	color: #FF791F;
+	text-align:center;
+	font-size: 1.3rem;
+	padding-top: 160px;
+}	
+.objetivo{
+	font-size: 1.1rem;
+}	
+.objetivo > span{
+	border-left: 1.5px solid #FF791F;
+	padding-left: 5px;
+	font-weight: bold;
+}	
+#prog > header{
+	background-image: url('../img/logoprog.png');
+	background-position: top;
+	background-repeat: no-repeat;
+	background-size: 40%;
+}
+#bases > header{
+	background-image: url('../img/logobases.png');
+	background-position: top;
+	background-repeat: no-repeat;
+	background-size: 40%;
+}	
+#ccw > header{
+	background-image: url('../img/logoccw.png');
+	background-position: top;
+	background-repeat: no-repeat;
+	background-size: 40%;
+}	
+#design > header{
+	background-image: url('../img/logodesign.png');
+	background-position: top;
+	background-repeat: no-repeat;
+	background-size: 40%;
+}	
+#matematica > header{
+	background-image: url('../img/logomatematica.png');
+	background-position: top;
+	background-repeat: no-repeat;
+	background-size: 40%;
+}
+#ingles > header{
+	background-image: url('../img/logoingles.png');
+	background-position: top;
+	background-repeat: no-repeat;
+	background-size: 40%;
+}
+#port > header{
+	background-image: url('../img/logoportugues.png');
+	background-position: top;
+	background-repeat: no-repeat;
+	background-size: 40%;
+}
+#ppsi > header{
+	background-image: url('../img/logoppsi.png');
+	background-position: top;
+	background-repeat: no-repeat;
+	background-size: 40%;
+}
+/* Fim da Matérias*/
 /*Fim do Conteúdo*/
+@media all and (min-width: 425px){
+	.materiasdiv > header > h4{
+		padding-top: 180px;
+	}	
+}	
 @media all and (min-width: 768px) {
 	/* Menu */
 	.header-topo{
@@ -238,6 +326,18 @@ main{
 	}	
 	/*Fim do Rodapé*/
 	/* Conteudo */
+		.mapa{
+			display: block;
+			padding: 10px;
+		}	
+		.mapa a:link,.mapa a:visited, .mapa{
+			text-decoration: none;
+			color: #2c2c2c;
+			font-size: 1rem;
+		}
+		.mapa a:hover{
+			color: #FF791F;
+		}
 		/* Index */
 			.pprincipal{
 				padding: 40px 0px;
