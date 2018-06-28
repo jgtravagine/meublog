@@ -261,7 +261,7 @@ main{
 	font-size: 1.2rem;
 }
 .texto{
-	font-size: 1rem;
+	font-size: 1.1rem;
 }		
 .missao{
 	margin: 10px 0px;
@@ -271,6 +271,9 @@ main{
 }	
 /* Fim da Instituição*/
 /* Sobre */
+.teingles{
+	display:none;
+}	
 .fotoperfil{
 	display: flex;
 	align-items: center;
@@ -349,6 +352,43 @@ main{
 }
 /* FIm choose btn */
 /* Fim do Sobre */
+/* Contato */
+	.forms{
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		text-align: center;
+	}	
+	.forms > form >label{
+		margin-bottom: 5px;
+		color: #FF791F;
+		font-size: 1.5em;
+	}	
+	.forms > form >input{
+		margin-bottom: 20px;
+		padding: 1.5vh 2vw;
+	}	
+	.forms > form >label, .forms > form >input, .forms >form> textarea{
+		display:block;
+	}
+	.forms > form >input[type=submit], .forms > form >input[type=reset]{
+		padding: 5px 2vw;
+		display:inline-block;
+		margin-top: 20px;
+		background: #FF791F;
+		color: #2c2c2c;
+		border: none;
+		cursor:pointer;
+	}
+	.forms > form> textarea{
+		max-width: 50vw;
+		height: 20vh;
+		resize: none;
+		margin: auto;
+		text-align: justify;
+		padding: 20px 20px 20px 20px;
+	}
+/* Fim dos Contato */
 /*Fim do Conteúdo*/
 @media all and (min-width: 425px){
 	.materiasdiv > header > h4{
@@ -427,6 +467,24 @@ main{
 				font-size: 1.2rem;
 			}
 		/* Fim do Sobre */
+		/* Contato */
+			.forms > form >input[type=submit], .forms > form >input[type=reset]{
+				padding: 5px 2vw;
+				display:inline-block;
+				margin-top: 20px;
+			}
+			.forms >form >input[type=text],.forms >form >input[type=email]{
+				min-width: 40vw;
+				max-width: 60vw;
+				font-size: 1.2em;
+			}
+			.forms > form> textarea{
+				min-width: 40vw;
+				max-width: 60vw;
+				height: 20vh;
+				font-size: 1.2em;
+			}
+		/* Fim dos Contato*/
 	/*Fim do Conteudo */
 }
 @media all and (min-width: 1024px){	
@@ -536,7 +594,7 @@ main{
 		/* Fim das Matérias*/
 		/* Sobre */
 			.psobre{
-				padding: 40px;
+				padding: 15vh;
 			}
 			.fotoperfil{
 				margin-top: -5%;

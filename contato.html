@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+		<meta name="theme-color" content="#2C2C2C"/>
+		<script type="text/javascript" src="js/jquery.js"></script>
+		<script type="text/javascript" src="js/comportamento.js"></script>
+		<link rel="stylesheet" type="text/css" href="css/estilos.css"/>
+		<link rel="icon" type="image/png" href="img/IconJG.png"/>
+		<title>JG - Contato</title>
+	</head>
+	<body>
+		<header class="header-topo">
+			<header>
+				<!-- Logo -->
+			</header>
+			<!--- Menu -->
+			<nav>
+				<div>
+				<!-- Menu resposivo -->
+					<nav class="menu-resposive">
+					<!-- Icon do menu resposivo -->
+						<div id="menu-icon">
+							<div> </div>	
+							<div> </div>
+							<div> </div>
+						</div>
+						<div id="menu">
+							<span> Menu </span>
+						</div>
+					</nav>
+				</div>
+				<ul class="menu">
+					<li><a title="Ir para Página Principal" href="index.html"> Home </a> </li>
+					<li><a title="Menu de Matérias" href="materias.html"> Matérias </a></li>
+					<li><a title="Ir para Página sobre a Fatec Jales" href="instituicao.html"> Instituição </a> </li>
+					<li><a title="Ir para Página Sobre o desenvolvedor do blog" href="sobre.html"> Sobre </a> </li>
+					<li><a class="active"  title="Ir para Página Contatos" href="contato.html"> Contato </a> </li>
+				</ul>
+			</nav>
+		</header>
+		<!-- Mapa para versão desktop -->
+		<nav class="mapa">
+			<a title="Voltar para Página Principal" href="index.html"> Home </a>
+			>
+			<a title="Você Está na Página de Contatos" href="contato.html"> Contato </a>
+		</nav>
+		<main>
+			<section class="forms">
+				<form method="post" action="#">
+					<label for="nome"> Nome: </label>
+					<input type="text" name="name" id="nome" placeholder="Digite seu nome:" autofocus required />
+					<label for="email"> Email: </label>
+					<input type="email" name="email" id="email" placeholder="Digite seu email:" maxlength="30"  required />
+					<label for="assunto"> Assunto: </label>
+					<input type="text" name="assunto" id="assunto" placeholder="Digite seu assunto:" maxlength="30"  required />
+					<label for="mensagem"> Mensagem: </label>
+					<textarea id="mensagem" name="mensagem" placeholder="Digite sua mensagem:"></textarea>
+					<input	title="Enviar comentário" type="submit" onclick="enviarMail()" name="submit" value="Enviar"/>
+					<input title="Limpar comentário" type="reset" name="reset" value="Limpar"/>
+				</form>
+			</section>
+		</main>
+		<footer class="rodape"> 
+			<nav class="maparodape">
+				<header>
+					<h5> Principais </h5>
+				</header>
+				<nav>
+					<ul>
+						<li><a title="Ir para Página Principal" href="index.html"> Home </a> </li>
+						<li><a title="Menu de Matérias" href="materias.html"> Matérias </a></li>
+						<li><a title="Ir para Página sobre a Fatec Jales" href="instituicao.html"> Instituição </a> </li>
+						<li><a title="Ir para Página Sobre o desenvolvedor do blog" href="sobre.html"> Sobre </a> </li>
+						<li><a title="Ir para Página Contatos" href="contato.html"> Contato </a> </li>
+					</ul>
+				</nav>	
+			</nav>
+			<article class="info">
+				<section class="direitos">
+					<p>&copy; 2018 - Direitos de uso reservado JG  </p>
+					<h4> Desenvolvido por <a title="Ir para Facebook Pessoal" href="https://www.facebook.com/profile.php?id=100003193478809">JG</a> </h4>
+				</section>
+				<section class="referencias">
+					<header>
+						<span> Fontes: </span>
+					</header>
+					<a title="Ir para o Site da W3Schools" id="w3" href="https://www.w3schools.com/default.asp"> W3Schools</a>,
+					<a title="Ir para o Site do Maujor" id="ma" href="http://www.maujor.com/"> Maujor</a>,
+					<a title="Ir para o Site do Tecmundo" id="tec" href="https://www.tecmundo.com.br/"> TecMundo</a>.
+				</section>
+			</article>
+		</footer>
+	</body>
+</html>

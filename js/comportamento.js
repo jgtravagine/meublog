@@ -4,7 +4,6 @@ $(document).ready(function(){
     });
 });
 $(document).ready(function(){
-	$(".teingles").hide();
 	$("#traduzir").keypress(function(){
 		$(".teportugues").hide();
 		$(".teingles").show();;		
