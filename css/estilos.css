@@ -27,15 +27,15 @@ time, mark, audio, video {
 	border-bottom: 1px solid #7D7D7D;
 }
 .header-topo > header{
-	padding: 80px;
+	padding: 10vh;
 	background: url("../img/logo.png"), #2C2C2C;
 	background-position: center;
 	background-repeat: no-repeat;
-	background-size: 250px;
+	background-size: 60%;
 }
 .menu-resposive{
 	text-align:center;
-	margin: 15px 0px;
+	margin: 3vh 0;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -46,13 +46,13 @@ time, mark, audio, video {
 	cursor: pointer;
 }
 #menu-icon{
-	margin: 0px 2px;
-	padding: 5px;
+	margin: 0px 0.5vh;
+	padding: 0.8vh;
 	cursor: pointer;
 }	
 #menu-icon > div{
 	padding: 1.5px 10px;
-	margin: 3px 0px;
+	margin: 0.5vh 0;
 	background-color: white;
 }	
 .menu{
@@ -149,12 +149,18 @@ main{
 }	
 /* Fim do Index*/
 /* Matérias */
+.pmateria > header{
+	text-align: center;
+	font-size: 1.5rem;
+	color: #FF791F;
+	padding: 10px 0px;
+}
 .pmateria > article{
 	display: flex;
 	justify-content: center;
 	align-items: top;
-	flex-flow: wrap row; 
-}	
+	flex-flow: row wrap;
+}		
 .materiasdiv{
 	max-width: 300px;
 	border: 1px solid black;
@@ -228,6 +234,42 @@ main{
 	background-size: 40%;
 }
 /* Fim da Matérias*/
+/* instituição */
+.pinstituicao > header{
+	text-align: center;
+	font-size: 1.5rem;
+	color: #FF791F;
+	padding: 10px 0px;
+}
+.pinstituicao > header > h2{
+	text-align: center;
+}
+.cursosfatec > header{
+	margin: 10px 0px;
+}	
+.cursosfatec > header >h3{
+	text-align: center;
+	font-size: 1.2rem;
+	font-weight: bold;
+}	
+.cursos{
+	margin-bottom: 20px;
+	text-align: justify;
+}
+.cursos > span{
+	color: #FF791F;
+	font-size: 1.2rem;
+}
+.texto{
+	font-size: 1rem;
+}		
+.missao{
+	margin: 10px 0px;
+}
+.localizacao > iframe{
+	max-width: calc(100vw - 40px);
+}	
+/* Fim da Instituição*/
 /*Fim do Conteúdo*/
 @media all and (min-width: 425px){
 	.materiasdiv > header > h4{
@@ -238,6 +280,9 @@ main{
 	/* Menu */
 	.header-topo{
 		font-size: 1.3rem;
+	}
+	.header-topo > header{
+		background-size: 30%;
 	}
 	/*Fim do Menu */
 	/* Conteudo */
@@ -252,8 +297,8 @@ main{
 				grid-template-areas:
 				'sobre fatec fatec'
 				'sobre materias materias';
-				grid-template-columns: 400px 300px auto auto;
-				grid-gap: 10px;
+				grid-template-columns: 50vw 30vw auto auto;
+				grid-gap: 0.8em;
 			}	
 			#sobre > section{
 				position: relative;
@@ -269,10 +314,23 @@ main{
 				grid-area: materias;
 			}			
 		/* Fim do Index*/
+		/*Matérias*/
+			.localizacao{
+				display:flex;
+				justify-content:center;
+				align-items: center;
+			}	
+			.localizacao > iframe{
+				margin:auto;
+			}	
+		/*Fim das Matérias*/
 	/*Fim do Conteudo */
 }
-@media all and (min-width: 1024px){
+@media all and (min-width: 1024px){	
 	/* Menu */
+	.header-topo > header{
+		background-size: 20%;
+	}
 	.menu-resposive{
 		display:none;
 	}
@@ -281,7 +339,7 @@ main{
 		justify-content: center;
 	}	
 	.menu > li{
-		margin: 0px;
+		margin: 0;
 	}	
 	.menu > li > a:link, .menu > li > a:visited{
 		padding: 10px 10px;
@@ -342,10 +400,6 @@ main{
 			.pprincipal{
 				padding: 40px 0px;
 			}	
-			.pprincipal >article{
-				grid-template-columns: 600px 300px auto auto;
-				grid-template-rows: 200px 200px;
-			}
 			.infopp header{
 				font-size: 2rem;
 			}
@@ -360,17 +414,22 @@ main{
 			}	
 			#sobre > section{
 				position: relative;
-				top: 45%;
+				top: 23vh;
 			}	
 			#fatec > section{
 				position: relative;
-				top: 15%;
+				top: 0.35vh;
 			}	
 			#materias > section{
 				position: relative;
-				top: 15%;
+				top: 0.35vh;
 			}
 		/* Fim do Index*/
+		/* Matérias */
+			.pinstituicao{
+				padding: 40px 80px;
+			}
+		/* Fim das Matérias*/
 	/*Fim do Conteudo */
 }
 @media all and (min-width: 1440px) {
@@ -381,35 +440,45 @@ main{
 	.rodape{
 		font-size: 1.3rem;
 	}
+	.mapa{
+			display: none;
+	}
 	/*Fim do Menu */
 	
 	/* Conteudo */
 		/* Index */
-			.pprincipal >article{
-				grid-template-columns: 800px 500px auto auto;
-				grid-template-rows: 300px 300px;
-			}
 			.infopp header{
 				font-size: 2.5rem;
 			}
 			.infopp  article{
 				font-size: 1.5rem;
 			}
-			#sobre > section{
-				position: relative;
-				top: 56%;
-			}	
 			#sobre{
 				background-size: 90%;
-			}
-			#fatec > section{
-				position: relative;
-				top: 40.5%;
-			}	
-			#materias > section{
-				position: relative;
-				top: 40.5%;
-			}			
+			}		
 		/* Fim do Index*/
+		/* Matérias */
+			.materiasdiv > header > h4{
+				font-size: 1.8rem;
+			}	
+			.objetivo{
+				font-size: 1.5rem;
+			}
+		/* Fim das Matérias*/
+		/* Instituição*/	
+			.pinstituicao > header > h2{
+				font-size: 2.3rem;
+			}	
+			.cursos > span{
+				color: #FF791F;
+				font-size: 1.7rem;
+			}
+			.texto{
+				font-size: 1.5rem;
+			}
+			.cursosfatec > header >h3{
+				font-size: 1.8rem;
+			}
+		/* Fim da Instituição*/
 	/*Fim do Conteudo */
 }
