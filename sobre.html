@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+		<meta name="theme-color" content="#2C2C2C"/>
+		<script type="text/javascript" src="js/jquery.js"></script>
+		<script type="text/javascript" src="js/comportamento.js"></script>
+		<link rel="stylesheet" type="text/css" href="css/estilos.css"/>
+		<link rel="icon" type="image/png" href="img/IconJG.png"/>
+		<title>JG - Sobre</title>
+	</head>
+	<body>
+		<header class="header-topo">
+			<header>
+				<!-- Logo -->
+			</header>
+			<!--- Menu -->
+			<nav>
+				<div>
+				<!-- Menu resposivo -->
+					<nav class="menu-resposive">
+					<!-- Icon do menu resposivo -->
+						<div id="menu-icon">
+							<div> </div>	
+							<div> </div>
+							<div> </div>
+						</div>
+						<div id="menu">
+							<span> Menu </span>
+						</div>
+					</nav>
+				</div>
+				<ul class="menu">
+					<li><a title="Ir para Página Principal" href="index.html"> Home </a> </li>
+					<li><a title="Menu de Matérias" href="materias.html"> Matérias </a></li>
+					<li><a title="Ir para Página sobre a Fatec Jales" href="instituicao.html"> Instituição </a> </li>
+					<li><a  class="active"  title="Ir para Página Sobre o desenvolvedor do blog" href="sobre.html"> Sobre </a> </li>
+					<li><a  title="Ir para Página Contatos" href="contato.html"> Contato </a> </li>
+				</ul>
+			</nav>
+		</header>
+		<!-- Mapa para versão desktop -->
+		<nav class="mapa">
+			<a title="Voltar para Página Principal" href="index.html"> Home </a>
+			>
+			<a title="Você Está na Página sobre O Desenvolvedor" href="sobre.html"> Sobre </a>
+		</nav>
+		<main class="psobre">
+			<article>
+				<section class="fotoperfil">
+					<img alt="Foto do Desenvolvedor" src="img/perfil.jpg"/>
+					<span> José Gabriel, 18 </span>
+				</section>
+				<section class="botao">
+					<form action="#" method="post">
+						<div class="onoffswitch">
+							<input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" onclick="if(this.checked){br()}else{eua()}"  id="myonoffswitch" checked />
+							<label class="onoffswitch-label" for="myonoffswitch"></label>
+						</div>
+					</form>	
+				</section>
+				<section class="texto sobre">
+					<p class="teportugues"> 
+						Técnico em Informática para internet, estudante de Sistemas para Internet, gosto muito de séries, todo o drama me distrai, outra paixão é construir sites, a liberdade que apenas linhas de códigos me proporciona me deixa fascinado. Meu primeiro contato com linguagens de programação e de marcação se deu na ETEC de Fernandópolis, onde realizei meu Médio e Técnico, após isso se tornou um vício, cada vez mais eu sentia a liberdade de criação que esse “mundo” novo me dava.
+						A paixão por computadores e suas tecnologias surgiu de meu irmão, ele me apresentou todo esse mundo e disse que a melhor maneira de se aprender é “fuçando” e isso me despertou curiosidade e posso dizer que metade do conhecimento que adquiri, até o momento, foi dessa forma, a outra parte veio com curso de Técnico de informática para Internet e pretendo obter cada vez mais conhecimento. Acredito que curso que estou fazendo na Fatec vai me auxiliar nesta busca interminável de conhecimento. 
+					</p>
+					<!--- Versão Inglês -->
+					<p class="teingles">
+						IT to Internet technician, Internet Systems student, I like so much watching series, all the drama distracts me. Another passion is building websites, the freedom that only code lines give me fascinates me. My first contact with programming and scripting languages was at ETEC from Fernandópolis, where I graduated High and Technical School, after that it became an addiction, more and more I felt this creation freedom from this world.
+						The passion of computers and its technologies was born from my brother, he has presented me these whole world and said the best way to learn about it is searching. That waked in me a curiosity. I can say half of my knowledge, until now, was acquired this way and the other one came with my Technological curse of IT to Internet and I hope I get even more found out about it. I believe the curse I am taking at Fatec will help me with this endless search of knowledge. 
+					</p>
+				</section>
+			</article>
+		</main>
+		<footer class="rodape"> 
+			<nav class="maparodape">
+				<header>
+					<h5> Principais </h5>
+				</header>
+				<nav>
+					<ul>
+						<li><a title="Ir para Página Principal" href="index.html"> Home </a> </li>
+						<li><a title="Menu de Matérias" href="materias.html"> Matérias </a></li>
+						<li><a title="Ir para Página sobre a Fatec Jales" href="instituicao.html"> Instituição </a> </li>
+						<li><a title="Ir para Página Sobre o desenvolvedor do blog" href="sobre.html"> Sobre </a> </li>
+						<li><a title="Ir para Página Contatos" href="contato.html"> Contato </a> </li>
+					</ul>
+				</nav>	
+			</nav>
+			<article class="info">
+				<section class="direitos">
+					<p>&copy; 2018 - Direitos de uso reservado JG  </p>
+					<h4> Desenvolvido por <a title="Ir para Facebook Pessoal" href="https://www.facebook.com/profile.php?id=100003193478809">JG</a> </h4>
+				</section>
+				<section class="referencias">
+					<header>
+						<span> Fontes: </span>
+					</header>
+					<a title="Ir para o Site da W3Schools" id="w3" href="https://www.w3schools.com/default.asp"> W3Schools</a>,
+					<a title="Ir para o Site do Maujor" id="ma" href="http://www.maujor.com/"> Maujor</a>,
+					<a title="Ir para o Site do Tecmundo" id="tec" href="https://www.tecmundo.com.br/"> TecMundo</a>.
+				</section>
+			</article>
+		</footer>
+	</body>
+</html>

@@ -270,11 +270,96 @@ main{
 	max-width: calc(100vw - 40px);
 }	
 /* Fim da Instituição*/
+/* Sobre */
+.fotoperfil{
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	text-align: center;
+	font-size: 1.4rem;
+}	
+.fotoperfil >img{
+	max-width: 100%;
+	border: 1px solid black;
+}	
+.fotoperfil > span{
+	color: #FF791F;
+	margin-top: 10px;
+}	
+.botao{
+	display: flex;
+	justify-content: center;
+	margin-left: -100px;
+	margin-top: 10px;
+}	
+.sobre{
+	text-align: justify;
+	margin: 60px 0px;
+}	
+/* Choose btn */
+.onoffswitch {
+    position: absolute; 
+	min-width: 90px;
+    -webkit-user-select:none; 
+	-moz-user-select:none; 
+	-ms-user-select: none;
+}
+.onoffswitch-checkbox {
+    display: none;
+}
+.onoffswitch-label {
+    display: block; 
+	overflow: hidden; 
+	cursor: pointer;
+    min-height: 30px; 
+	padding: 0; 
+	line-height: 30px;
+    border: 2px solid #B22234;
+	border-radius: 30px;
+    background: url("../img/choosebtn/eua.png"), green;
+	background-position: center;
+	background-size:cover;
+	background-repeat: no-repeat;
+    transition: background-color 0.3s ease-in;
+}
+.onoffswitch-label:before {
+    content: "";
+    display: block; 
+	min-width: 30px; 
+	margin: 0px;
+    background: rgba(255,255,255,0.8);
+    position: absolute; 
+	top: 0; bottom: 0;
+    right: 58px;
+    border: 2px solid #B22234; 
+	border-radius: 30px;
+    transition: all 0.3s ease-in 0s; 
+}
+.onoffswitch-checkbox:checked + .onoffswitch-label {
+    background: url("../img/choosebtn/brasil.png"), green;
+	background-position: center;
+	background-size:cover;
+	background-repeat: no-repeat;
+}
+.onoffswitch-checkbox:checked + .onoffswitch-label, .onoffswitch-checkbox:checked + .onoffswitch-label:before {
+   border-color: #009B3A;
+}
+.onoffswitch-checkbox:checked + .onoffswitch-label:before {
+    right: 0px; 
+}
+/* FIm choose btn */
+/* Fim do Sobre */
 /*Fim do Conteúdo*/
 @media all and (min-width: 425px){
 	.materiasdiv > header > h4{
 		padding-top: 180px;
 	}	
+	.fotoperfil >img{
+		max-width: 70%;
+	}		
+	.sobre{
+		font-size: 1.2rem
+	}
 }	
 @media all and (min-width: 768px) {
 	/* Menu */
@@ -324,6 +409,24 @@ main{
 				margin:auto;
 			}	
 		/*Fim das Matérias*/
+		/* Sobre */
+			.fotoperfil{
+				float:left;
+				max-width: 40%;
+			}	
+			.botao{
+				float: right;
+				margin-top: -40px;
+				margin-right: 90px;
+			}		
+			.fotoperfil >img{
+				max-width: 80%;
+			}	
+			
+			.sobre{
+				font-size: 1.2rem;
+			}
+		/* Fim do Sobre */
 	/*Fim do Conteudo */
 }
 @media all and (min-width: 1024px){	
@@ -356,6 +459,7 @@ main{
 	.rodape{
 		overflow:auto;
 		padding-bottom:0px;	
+		clear:both;
 	}	
 	.info a:hover{
 		text-decoration: underline;
@@ -430,6 +534,15 @@ main{
 				padding: 40px 80px;
 			}
 		/* Fim das Matérias*/
+		/* Sobre */
+			.psobre{
+				padding: 40px;
+			}
+			.fotoperfil{
+				margin-top: -5%;
+			}
+				
+		/* Fim do Sobre */
 	/*Fim do Conteudo */
 }
 @media all and (min-width: 1440px) {
@@ -480,5 +593,17 @@ main{
 				font-size: 1.8rem;
 			}
 		/* Fim da Instituição*/
+		/* Sobre */
+			.psobre{
+				margin-left: -100px;
+				margin-top: 80px;
+			}
+			.sobre{
+				font-size: 1.7rem
+			}
+			.fotoperfil{
+				font-size: 2rem;
+			}
+		/* Fim do Sobre */
 	/*Fim do Conteudo */
 }
