@@ -663,5 +663,17 @@ main{
 				font-size: 2rem;
 			}
 		/* Fim do Sobre */
+		/* Contatos */
+			.forms > form > label{
+				font-size: 2em;
+			}	
+			.forms > form >input[type=submit], .forms > form >input[type=reset]{
+				padding: 10px 4vw;
+				font-size: 1.2rem;
+			}
+			.forms > form> textarea{
+				font-size: 1.5em;
+			}
+		/* Fim dos Contatos */
 	/*Fim do Conteudo */
 }
